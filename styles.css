@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: url(./assets/Montserrat/Montserrat-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    src: url(./assets/Montserrat/Montserrat-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat Alternates';
+    font-weight: 500;
+    src: url(./assets/Montserrat/MontserratAlternates-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    font-weight: 700;
+    src: url(./assets/Libre_Baskerville/LibreBaskerville-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Luxurious Roman';
+    font-weight: 400;
+    src: url(./assets/Luxurious_Roman/LuxuriousRoman-Regular.ttf) format('truetype');
+}
+
+
+
+p {
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+p.title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+p.undertitle {
+    font-family: 'Montserrat Alternates';
+    font-weight: 500;
+}
+
+h1 {
+    font-family: 'Luxurious Roman';
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Libre Baskerville';
+    font-weight: 700;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    background-color: #2D2F40;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    display: inline-block;
+}
+
+main {
+    background-color: #ffffff;
+}
+
+.container {
+    border: 1px solid black;
+}
+
+footer {
+    background-color: #2D2F40;
+    color: #ffffff;
+}
+
+.nav-link {
+    color: #E3EDFA;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    background-color: #8999b5;
+    cursor: pointer;
+}
+
+.nav-link:active {
+    background-color: #8999b5;
+}
+
+.animation {
+    width: 100%;
+}
+
