@@ -19,10 +19,33 @@
         </nav>
     </header>
     <main>
+        <!-- Animation: Farben geändert -->
         <img src="assets/pictures/shadergradient.gif" alt="shadergradient animation" class="animation">
         <section>
             <h1>Tobias Kuhn</h1>
             <p class="undertitle">Student, Junior Developer</p>
+        </section>
+        <section class="container contact">
+            <h2 id="contact">Contact</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name"><p>Name</p></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><p>E-Mail</p></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject"><p>Betreff</p></label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message"><p>Nachricht</p></label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit"><p>Absenden</p></button>
+                </form>
         </section>
     </main>
     <footer>
