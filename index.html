@@ -19,33 +19,51 @@
         </nav>
     </header>
     <main>
-        <!-- Animation: Farben geändert -->
-        <img src="assets/pictures/shadergradient.gif" alt="shadergradient animation" class="animation">
-        <section>
-            <h1>Tobias Kuhn</h1>
-            <p class="undertitle">Student, Junior Developer</p>
+        <section class="hero">
+            <!-- Animation: Farben geändert -->
+            <img src="assets/pictures/shadergradient.gif" alt="shadergradient animation" class="animation">
+            <section class="first">
+                <h1>Tobias Kuhn</h1>
+                <p class="undertitle">Student, Junior Developer</p>
+            </section>
+        </section>
+        <section class="container about">
+            <h2 id="about">About</h2>
+            <p>Hi, my name is Tobias Kuhn.</p>
+            <p>I'm currently making my apprenticeship as a developer at Bühler in Uzwil.</p>
+            <p>In my freetime I practice self-defence (it's a kung fu style called WingTsun) in Wil and St. Gallen (<a href="https://wingtsunwil.ch/" class="sectionLink">To the website of the kung fu school</a>). I'm also member of the sport fishing club Sirnach, Münchwilen and surrounding region (<a href="https://www.sportfischersirnach.ch/" class="sectionLink">To the Website of the fishing club</a>).</p>
         </section>
         <section class="container contact">
             <h2 id="contact">Contact</h2>
-                <form action="#" method="post">
-                    <div class="form-group">
-                        <label for="name"><p>Name</p></label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email"><p>E-Mail</p></label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject"><p>Betreff</p></label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message"><p>Nachricht</p></label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit"><p>Absenden</p></button>
-                </form>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">
+                        <p>Name</p>
+                    </label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">
+                        <p>E-Mail</p>
+                    </label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">
+                        <p>Betreff</p>
+                    </label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">
+                        <p>Nachricht</p>
+                    </label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">
+                    <p>Absenden</p>
+                </button>
+            </form>
         </section>
     </main>
     <footer>
