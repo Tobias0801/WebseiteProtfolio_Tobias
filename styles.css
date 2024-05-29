@@ -162,6 +162,19 @@ section.first {
     z-index: 2;
 }
 
+/* Skills */
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.robin {
+    padding: 2%;
+}
+
 /*
 Contact Form
 */
@@ -215,7 +228,6 @@ button:hover {
 
 .email {
     cursor: pointer;
-    
 }
 
 /*
