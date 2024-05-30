@@ -28,9 +28,7 @@
     src: url(./assets/Luxurious_Roman/LuxuriousRoman-Regular.ttf) format('truetype');
 }
 
-/*
-Fonts
-*/
+/* Fonts */
 
 p {
     font-family: 'Montserrat';
@@ -58,9 +56,7 @@ h2 {
     font-weight: 700;
 }
 
-/*
-Navbar
-*/
+/* Navbar */
 
 header {
     width: 100%;
@@ -89,7 +85,7 @@ header {
     background-color: #8999b5;
 }
 
-/*Main*/
+/* Main */
 
 a {
     color: black;
@@ -97,7 +93,7 @@ a {
     transition: all ease-in-out 0.25s;
 }
 
-a:visited {
+main a:visited {
     color: blue;
 }
 
@@ -169,15 +165,54 @@ section.first {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 70%;
 }
 
 .robin {
-    padding: 2%;
+    display: flex;
+    align-items: center;
+    margin: 2%;
 }
 
-/*
-Contact Form
-*/
+.robin aside {
+    margin-right: 1%;
+}
+
+.catwoman {
+    display: flex;
+    flex-direction: column;
+}
+
+.catwoman p {
+    margin: 0;
+}
+
+/* Work */
+
+.work {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 70%;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin: 2%;
+}
+
+.project aside {
+    margin-right: 1%;
+}
+
+.joker {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contact Form */
 
 .contact {
     background: #8999B5;
@@ -230,9 +265,7 @@ button:hover {
     cursor: pointer;
 }
 
-/*
-Footer
-*/
+/* Footer */
 
 footer {
     background-color: #2D2F40;
