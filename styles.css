@@ -127,13 +127,10 @@ main {
     position: relative;
     width: 100%;
     height: 100vh;
-    /* Stellen Sie sicher, dass der Container die gesamte Höhe des Ansichtsfensters einnimmt */
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     overflow: hidden;
-    /* Verhindert, dass der Inhalt über die Grenzen hinausgeht */
 }
 
 .animation {
@@ -141,12 +138,13 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Stellt sicher, dass die Animation das gesamte Element abdeckt, ohne das Seitenverhältnis zu verzerren */
+    z-index: 1;
 }
 
-section.first {
-    position: relative;
-    /* Stellt sicher, dass das Z-Index funktioniert */
+/* Hilfe holen */
+
+.first {
+    position: absolute;
     width: 100%;
     height: 100%;
     display: flex;
@@ -154,8 +152,42 @@ section.first {
     justify-content: center;
     align-items: center;
     color: white;
-    /* Sie können die Farbe nach Bedarf anpassen */
     z-index: 2;
+    text-align: center;
+}
+
+section.first {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+
+/* About */
+
+.penguin {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.penguin img {
+    max-width: 25%;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container.about {
+    flex: 1;
 }
 
 /* Skills */
@@ -163,9 +195,8 @@ section.first {
 .skills {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    max-width: 70%;
 }
 
 .robin {
@@ -273,4 +304,186 @@ footer {
     padding: 10px 20px;
     margin: 0 10px;
     text-align: center;
+}
+
+/* Responsive */
+/* Tablets (Bildschirmbreiten zwischen 600px und 900px) */
+@media (max-width: 900px) and (min-width: 600px) {
+    header {
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .container {
+        max-width: 90%;
+        margin: 5%;
+    }
+
+    .penguin {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .penguin img {
+        max-width: 50%;
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .robin {
+        flex: 1 1 calc(33.333% - 1em);
+        margin: 0.5em;
+        display: flex;
+        align-items: center;
+    }
+
+    .robin aside {
+        margin-right: 1%;
+    }
+
+    .catwoman p {
+        margin: 0;
+    }
+
+    .work {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project aside {
+        order: -1;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .batman {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .batman a {
+        margin-bottom: 0;
+    }
+}
+
+/* Mobile Phones (Bildschirmbreiten bis 599px) */
+@media (max-width: 599px) {
+    header {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 10px 0;
+        margin: 5px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero .animation {
+        position: relative;
+        height: auto;
+    }
+
+    .penguin {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .penguin img {
+        max-width: 80%;
+    }
+
+    .container {
+        max-width: 95%;
+        margin: 2.5%;
+        padding: 1em;
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .robin {
+        flex: 1 1 calc(50% - 1em);
+        margin: 0.5em;
+        display: flex;
+        align-items: center;
+    }
+
+    .robin aside {
+        margin-right: 1%;
+    }
+
+    .catwoman p {
+        margin: 0;
+    }
+
+    .work {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project aside {
+        order: -1;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .batman {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .batman a {
+        margin-bottom: 0;
+    }
+
+    .contact form {
+        width: 100%;
+    }
+
+    .contact .form-group input,
+    .contact .form-group textarea {
+        width: 100%;
+    }
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.project aside {
+    order: -1;
+    margin-bottom: 10px;
 }
