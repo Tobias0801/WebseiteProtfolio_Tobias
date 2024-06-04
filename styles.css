@@ -35,7 +35,7 @@ p {
     font-weight: 400;
 }
 
-p.title {
+.title {
     font-family: 'Montserrat';
     font-weight: 700;
 }
@@ -54,6 +54,18 @@ h1 {
 h2 {
     font-family: 'Libre Baskerville';
     font-weight: 700;
+}
+
+/* Allgemein */
+
+body {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
 }
 
 /* Navbar */
@@ -84,17 +96,12 @@ header {
     background-color: #8999b5;
 }
 
+/* Hamburger Menu */
+.hamburgerMenu {
+    display: none;
+}
+
 /* Main */
-
-body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    width: 100%;
-}
 
 a {
     color: black;
@@ -115,9 +122,9 @@ main {
     background-color: #ffffff;
     text-align: center;
     margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
 }
@@ -151,25 +158,10 @@ main {
     z-index: 1;
 }
 
-/* Hilfe holen */
-
-.first {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    z-index: 2;
-    text-align: center;
-}
-
 section.first {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -191,13 +183,25 @@ section.first {
 }
 
 .penguin img {
-    max-width: 25%;
+    max-width: 30%;
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .container.about {
     flex: 1;
+}
+
+.WingTsun {
+    display: block;
+    max-width: 80%;
+    width: 80%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin: 20px auto;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Skills */
@@ -246,10 +250,21 @@ section.first {
     margin: 2%;
 }
 
-.project aside {
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: start;
+    align-items: start;
+}
+
+.projectPicture {
     order: -1;
-    margin-bottom: 10px;
-    margin-right: 1%;
+    width: 60%;
+    max-width: 100%;
+}
+
+.projectPicture2 {
+    display: none;
 }
 
 .joker {
@@ -261,7 +276,6 @@ section.first {
 
 .contact {
     background: #8999B5;
-    margin: 5%;
 }
 
 .form-group {
@@ -316,8 +330,9 @@ footer {
     background-color: #2D2F40;
     color: #ffffff;
     padding: 10px 20px;
-    margin: 0 10px;
+    margin: 0;
     text-align: center;
+    width: 100%;
 }
 
 /* Responsive */
@@ -339,7 +354,7 @@ footer {
     }
 
     .penguin img {
-        max-width: 50%;
+        max-width: 60%;
     }
 
     .skills {
@@ -364,21 +379,38 @@ footer {
     }
 
     .work {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .project {
+        display: flex;
         width: 80%;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        justify-content: center;
     }
 
     .project aside {
         order: -1;
         margin-right: 0;
         margin-bottom: 10px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .projectPicture {
+        display: none
+    }
+
+    .projectPicture2 {
+        display: block;
+        order: -1;
+        width: 100%;
+        max-width: 100%;
     }
 
     .batman {
@@ -394,14 +426,28 @@ footer {
 /* Mobile Phones (Bildschirmbreiten bis 425px) */
 @media (max-width: 426px) {
     header {
-        text-align: center;
-        padding: 10px;
+        padding: 0;
+    }
+
+    nav {
+        justify-content: end;
+        text-align: end;
+    }
+
+    nav a {
+        display: none;
     }
 
     .nav-link {
         visibility: hidden;
         padding: 10px 0;
         margin: 5px 0;
+    }
+
+    .hamburgerMenu {
+        display: inline;
+        width: 10%;
+        padding: 1%;
     }
 
     .hero {
@@ -448,24 +494,37 @@ footer {
     }
 
     .work {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .project {
-        width: 100%;
+        display: flex;
+        width: 80%;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        justify-content: center;
     }
 
     .project aside {
         order: -1;
         margin-right: 0;
         margin-bottom: 10px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
     }
 
-    .project img {
+    .projectPicture {
+        display: none
+    }
+
+    .projectPicture2 {
+        display: block;
+        order: -1;
+        width: 100%;
         max-width: 100%;
     }
 

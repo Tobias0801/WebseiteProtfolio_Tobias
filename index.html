@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tobias Kuhn</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -17,19 +17,31 @@
             <a href="#work" class="nav-link">Work</a>
             <a href="#contact" class="nav-link">Contact</a>
 
+            <!-- Dieses Hamburger Menü hat noch keine Funktion -->
+            <img src="./assets/pictures/menu.png" alt="hamburger menu" class="hamburgerMenu">
         </nav>
     </header>
     <main>
         <div class="hero">
             <!-- Animation: Farben geändert -->
-            <img src="assets/pictures/shadergradient.gif" alt="shadergradient animation" class="animation">
+            <img srcset="
+            https://res.cloudinary.com/dnpzkphgi/image/upload/w_770/q_auto/f_auto/shadergradient_fjla7f.gif 770w,
+            https://res.cloudinary.com/dnpzkphgi/image/upload/w_425/q_auto/f_auto/shadergradient_fjla7f.gif 425w,
+            https://res.cloudinary.com/dnpzkphgi/image/upload/w_325/q_auto/f_auto/shadergradient_fjla7f.gif 325w"
+                src="https://res.cloudinary.com/dnpzkphgi/image/upload/v1717486164/shadergradient_fjla7f.gif"
+                alt="shadergradient animation" class="animation">
             <section class="first">
                 <h1>Tobias Kuhn</h1>
                 <p class="undertitle">Student, Junior Developer</p>
             </section>
         </div>
         <div class="penguin">
-            <img src="./assets/pictures/Portrait.jpeg" alt="Portrait of myself">
+            <img srcset="
+                https://res.cloudinary.com/dnpzkphgi/image/upload/w_770/q_auto/f_auto/Portrait_pvvorz.jpg 770w,
+                https://res.cloudinary.com/dnpzkphgi/image/upload/w_425/q_auto/f_auto/Portrait_pvvorz.jpg 425w,
+                https://res.cloudinary.com/dnpzkphgi/image/upload/w_325/q_auto/f_auto/Portrait_pvvorz.jpg 325w"
+                src="https://res.cloudinary.com/dnpzkphgi/image/upload/v1717486162/Portrait_pvvorz.jpg"
+                alt="Portrait of myself">
             <section class="container about">
                 <h2 id="about">About</h2>
                 <p>Hi, my name is Tobias Kuhn.</p>
@@ -42,15 +54,20 @@
                         school</a>). I'm also member of the sport fishing club Sirnach, Münchwilen and surrounding
                     regions
                     (<a href="https://www.sportfischersirnach.ch/" class="sectionLink" target="_blank">To the Website of
-                        the
-                        fishing club</a>).</p>
+                        the fishing club</a>).</p>
+                        <h3 class="title">Documentation about WingTsun</h3>
+                <iframe src="https://www.youtube.com/embed/cmbfUwWPgdA?si=KCGBb0MjNlHOgXv6" class="WingTsun"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
         </div>
         <section class="container">
             <h2 id="skills">Skills</h2>
             <div class="skills">
                 <div class="robin">
-                    <aside><img src="./assets/pictures/development-skill-48.png" alt="development skill icon"></aside>
+                    <aside><img src="./assets/pictures/development-skill-48.png" alt="development skill icon">
+                    </aside>
                     <div class="catwoman">
                         <p class="title">HTML</p>
                         <p>Experienced</p>
@@ -118,21 +135,29 @@
             <h2 id="work">Work</h2>
             <div class="project">
                 <aside>
-                    <img src="./assets/pictures/placeholder.png" alt="Placeholder for a picture of a work"
-                        class="projectPicture">
+                    <img srcset="https://res.cloudinary.com/dnpzkphgi/image/upload/w_770/q_auto/f_auto/work2_w3kvcv.png,
+                    https://res.cloudinary.com/dnpzkphgi/image/upload/w_425/q_auto/f_auto/work2_w3kvcv.png,
+                    https://res.cloudinary.com/dnpzkphgi/image/upload/w_325/q_auto/f_auto/work2_w3kvcv.png"
+                        src="https://res.cloudinary.com/dnpzkphgi/image/upload/v1717529684/work2_w3kvcv.png"
+                        alt="Picture of a memory game I made with colleagues" class="projectPicture2">
+                    <img srcset="
+                    https://res.cloudinary.com/dnpzkphgi/image/upload/w_770/q_auto/f_auto/work_tba4pt.png 770w,
+                    https://res.cloudinary.com/dnpzkphgi/image/upload/w_425/q_auto/f_auto/work_tba4pt.png 425w,
+                    https://res.cloudinary.com/dnpzkphgi/image/upload/w_325/q_auto/f_auto/work_tba4pt.png 325w"
+                        src="https://res.cloudinary.com/dnpzkphgi/image/upload/v1717494467/work_tba4pt.png"
+                        alt="Picture of a memory game I made with colleagues" class="projectPicture">
                 </aside>
                 <div class="joker">
-                    <p class="title">Title</p>
-                    <p>Lorem ipsum dolor sit amet consectetur. Netus felis eget cursus feugiat. Ipsum elit nunc aliquam
-                        faucibus sodales mauris. Eget malesuada amet morbi morbi tristique nullam enim. Ultricies enim
-                        ornare ut enim in. Quam blandit pulvinar enim metus lobortis tellus a vulputate massa. Mauris
-                        viverra platea in blandit quis maecenas. Vestibulum eu quis enim lacus tristique morbi vel
-                        gravida. Justo.</p>
+                    <h3 class="title">Memory game</h3>
+                    <p>In this project I created a memory game with some colleagues in HTML, CSS and JavaScript. This
+                        was my first project and I'm very proud of it.</p>
+                    <p>This memory game is played like a normal memory.</p>
                 </div>
             </div>
         </section>
         <section class="container contact">
             <h2 id="contact">Contact</h2>
+            <!-- This contact-form has no function -->
             <form action="#" method="post">
                 <div class="form-group">
                     <label for="name">
@@ -165,14 +190,14 @@
             <!-- Piktogramme von verschiedenen Plattformen: Position geändert -->
             <!-- Piktogramm für Mail entfernt, da kein Nutzen davon erkannt wurde -->
             <div class="batman">
-                <a href="https://github.com/Tobias0801" target="_blank"><img src="./assets/pictures/github.png"
-                        alt="GitHub"></a>
+                <a href="https://github.com/Tobias0801" target="_blank">
+                    <img src="./assets/pictures/github.png" alt="GitHub"></a>
                 <a href="" target="_blank"><img src="./assets/pictures/linkedin.png" alt="LinkedIn"></a>
-                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <p>Copyright &copy; Tobias Kuhn 2024</p>
+        Copyright &copy; Tobias Kuhn 2024. Alle Rechte vorbehalten.
     </footer>
 </body>
 
