@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta lang="en">
     <title>Tobias Kuhn</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
@@ -17,18 +16,19 @@
             <a href="#skills" class="nav-link">Skills</a>
             <a href="#work" class="nav-link">Work</a>
             <a href="#contact" class="nav-link">Contact</a>
+
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <div class="hero">
             <!-- Animation: Farben geändert -->
             <img src="assets/pictures/shadergradient.gif" alt="shadergradient animation" class="animation">
             <section class="first">
                 <h1>Tobias Kuhn</h1>
                 <p class="undertitle">Student, Junior Developer</p>
             </section>
-        </section>
-        <section class="penguin">
+        </div>
+        <div class="penguin">
             <img src="./assets/pictures/Portrait.jpeg" alt="Portrait of myself">
             <section class="container about">
                 <h2 id="about">About</h2>
@@ -45,10 +45,10 @@
                         the
                         fishing club</a>).</p>
             </section>
-        </section>
+        </div>
         <section class="container">
             <h2 id="skills">Skills</h2>
-            <section class="skills">
+            <div class="skills">
                 <div class="robin">
                     <aside><img src="./assets/pictures/development-skill-48.png" alt="development skill icon"></aside>
                     <div class="catwoman">
@@ -112,11 +112,11 @@
                         <p>Experienced</p>
                     </div>
                 </div>
-            </section>
+            </div>
         </section>
         <section class="container work">
             <h2 id="work">Work</h2>
-            <section class="project">
+            <div class="project">
                 <aside>
                     <img src="./assets/pictures/placeholder.png" alt="Placeholder for a picture of a work"
                         class="projectPicture">
@@ -129,46 +129,46 @@
                         viverra platea in blandit quis maecenas. Vestibulum eu quis enim lacus tristique morbi vel
                         gravida. Justo.</p>
                 </div>
-            </section>
+            </div>
         </section>
         <section class="container contact">
             <h2 id="contact">Contact</h2>
             <form action="#" method="post">
                 <div class="form-group">
                     <label for="name">
-                        <p>Name</p>
+                        Name
                     </label>
                     <input type="text" id="name" name="name" required placeholder="Your full name...">
                 </div>
                 <div class="form-group">
                     <label for="email">
-                        <p>E-Mail</p>
+                        E-Mail
                     </label>
                     <input type="email" id="email" name="email" placeholder="Your e-mail adress..." required>
                 </div>
                 <div class="form-group">
                     <label for="subject">
-                        <p>Subject</p>
+                        Subject
                     </label>
                     <input type="text" id="subject" name="subject" placeholder="Your subject..." required>
                 </div>
                 <div class="form-group">
                     <label for="message">
-                        <p>Message</p>
+                        Message
                     </label>
                     <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
                 </div>
                 <button type="submit">
-                    <p>Absenden</p>
+                    Absenden
                 </button>
             </form>
             <!-- Piktogramme von verschiedenen Plattformen: Position geändert -->
             <!-- Piktogramm für Mail entfernt, da kein Nutzen davon erkannt wurde -->
-            <section class="batman">
+            <div class="batman">
                 <a href="https://github.com/Tobias0801" target="_blank"><img src="./assets/pictures/github.png"
                         alt="GitHub"></a>
                 <a href="" target="_blank"><img src="./assets/pictures/linkedin.png" alt="LinkedIn"></a>
-            </section>
+                </div>
         </section>
     </main>
     <footer>

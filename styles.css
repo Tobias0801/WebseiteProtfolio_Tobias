@@ -65,7 +65,6 @@ header {
     padding: 10px;
     margin: 0px;
     text-align: center;
-    display: inline-block;
     z-index: 3;
 }
 
@@ -86,6 +85,16 @@ header {
 }
 
 /* Main */
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+}
 
 a {
     color: black;
@@ -110,6 +119,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .container {
@@ -230,11 +240,15 @@ section.first {
 
 .project {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
     margin: 2%;
 }
 
 .project aside {
+    order: -1;
+    margin-bottom: 10px;
     margin-right: 1%;
 }
 
@@ -276,7 +290,7 @@ button {
     background-color: #007BFF;
     color: #fff;
     border: none;
-    padding: 5px 20px;
+    padding: 2% 20px;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
@@ -307,8 +321,8 @@ footer {
 }
 
 /* Responsive */
-/* Tablets (Bildschirmbreiten zwischen 600px und 900px) */
-@media (max-width: 900px) and (min-width: 600px) {
+/* Tablets (Bildschirmbreiten zwischen 425px und 768px) */
+@media (max-width: 769px) and (min-width: 425px) {
     header {
         text-align: center;
         padding: 10px 20px;
@@ -377,15 +391,15 @@ footer {
     }
 }
 
-/* Mobile Phones (Bildschirmbreiten bis 599px) */
-@media (max-width: 599px) {
+/* Mobile Phones (Bildschirmbreiten bis 425px) */
+@media (max-width: 426px) {
     header {
         text-align: center;
         padding: 10px;
     }
 
     .nav-link {
-        display: block;
+        visibility: hidden;
         padding: 10px 0;
         margin: 5px 0;
     }
@@ -395,11 +409,6 @@ footer {
         justify-content: center;
         align-items: center;
         text-align: center;
-    }
-
-    .hero .animation {
-        position: relative;
-        height: auto;
     }
 
     .penguin {
@@ -413,7 +422,6 @@ footer {
     }
 
     .container {
-        max-width: 95%;
         margin: 2.5%;
         padding: 1em;
     }
@@ -457,9 +465,14 @@ footer {
         margin-bottom: 10px;
     }
 
+    .project img {
+        max-width: 100%;
+    }
+
     .batman {
         flex-direction: row;
         justify-content: space-evenly;
+        display: block;
     }
 
     .batman a {
@@ -469,21 +482,4 @@ footer {
     .contact form {
         width: 100%;
     }
-
-    .contact .form-group input,
-    .contact .form-group textarea {
-        width: 100%;
-    }
-}
-
-.project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.project aside {
-    order: -1;
-    margin-bottom: 10px;
 }
